@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@layer components{
+    .flex-center-center{
+        @apply flex justify-center items-center
+    }
+    .no-outline{
+        @apply outline-none focus:outline-none
+    }
+    .animation{
+        @apply transition-all ease-in-out duration-300
+    }
+}
+
+.faded-bg{
+    background: rgba(120, 241, 99, 0.5);
+    backdrop-filter: blur(4px);
+}
